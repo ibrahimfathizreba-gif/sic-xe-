@@ -270,3 +270,16 @@ END RELOC`;
   assert.equal(res.objectProgram!.modRecords[0].address, 0x1001);
   assert.equal(res.objectProgram!.modRecords[0].halfBytes, 5);
 });
+
+test('All built-in example programs assemble cleanly with 0 errors', () => {
+  for (const example of EXAMPLES) {
+    const res = Assembler.assemble(example.source);
+    assert.equal(
+      res.success,
+      true,
+      `Example '${example.title}' failed assembly: ${res.errors.map((e) => e.message).join(', ')}`
+    );
+    assert.equal(res.errors.length, 0);
+  }
+});
+

@@ -2,5 +2,7 @@
   "name": "SIC/XE Studio & CPU Simulator",
   "description": "Modern aesthetic two-pass assembler and visual CPU architecture simulator for Leland Beck's SIC/XE computer.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

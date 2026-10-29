@@ -1,5 +1,5 @@
 EXTPRG  START   0
-        LDB     #DATA
+        +LDB    #DATA
         BASE    DATA
         +LDT    #4096
         CLEAR   X

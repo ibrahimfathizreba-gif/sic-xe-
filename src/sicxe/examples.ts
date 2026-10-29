@@ -62,7 +62,7 @@ RES     RESW    1
     tags: ['BASE', 'Format 4', 'Indexed', 'STCH'],
     expectedResult: 'Demonstrates +LDT, BASE relocation, and buffer indexing',
     source: `EXTPRG  START   0
-        LDB     #DATA
+        +LDB    #DATA
         BASE    DATA
         +LDT    #4096
         CLEAR   X
